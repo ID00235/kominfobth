@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/users', function () {
+    $user = DB::table('users')->get();
+    var_dump($user);
+});
