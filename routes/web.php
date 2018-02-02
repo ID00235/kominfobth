@@ -19,3 +19,7 @@ Route::get('/users', function () {
     $user = DB::table('users')->get();
     var_dump($user);
 });
+
+
+
+
